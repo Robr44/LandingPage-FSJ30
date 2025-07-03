@@ -12,7 +12,7 @@
 }
 
 /* ---- Seccion de saludo-content ------*/
-.saludo-content {
+.saludo .saludo-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     max-width: 800px;
 }
 
-.saludo-content h1 {
+.saludo .saludo-content h1 {
     font-family: 'Libertinus Mono', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
@@ -29,7 +29,7 @@
     color: white
 }
 /* ---- Boton promocions ---- */
-.saludo-content .btn-danger {
+.saludo .saludo-content a {
     background-color: #c0392b;
     border: none;
     padding: .75rem 1.75rem;
@@ -75,6 +75,11 @@ h2 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.container-card .card h3{
+    font-family: 'Lora';
+    color:#a93226
+}
+
 /* ---- Footers ---- */
 footer{
   background-color: #333;
@@ -83,7 +88,20 @@ footer{
 
 }
 
-/* ---- Section suscripcion.html------*/
+/* ---- Seccion de promociones.html ---- */
+
+.promos h1{
+    font-family: 'Lora';
+    background-color: rgb(173, 63, 63);
+    color:white;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- Seccion de suscripcion.html------*/
 
 /* ----- container suscripcion ---- */
 .container-suscripcion {
@@ -108,7 +126,7 @@ footer{
 }
 
 /* ---- Form suscribete ---- */
-.subscribete{
+.container-suscripcion .subscribir{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -116,27 +134,28 @@ footer{
 }
 
 /* ---- Datos de entrada ---- */
-.subscribete input {
-    padding: 0.1rem;
+.container-suscripcion .subscribir input {
     font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
     outline: none;
     width: 220px;
+    height: 40px;
 }
 
 /* ---- Boton suscribirse ---- */
-.subscribe button {
+.container-suscripcion .subscribir button {
     background-color: #c0392b;
     color: white;
-    padding: 0.75rem 1.25rem;
+    padding: 0 1.25rem;
     border: none;
+    height: 40px;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.subscribe button:hover {
+.container-suscripcion .subscribir button:hover {
     background-color: #a93226;
 }
